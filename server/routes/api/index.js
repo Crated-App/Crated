@@ -1,9 +1,8 @@
-const path = require('path');
 const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.sendFile(path.join(process.cwd(), 'public/index.html'));
+  res.json({message: 'Hello from Crate API'});
 });
 
 module.exports = router;

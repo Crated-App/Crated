@@ -1,5 +1,6 @@
 const express = require('express');
 const indexRoutes = require('./routes');
+const apiRoutes = require('./routes/api');
 const path = require('path');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRoutes);
+app.use('/api', apiRoutes);
 
 //Dev environment
 if(app.get('env') === 'development') {

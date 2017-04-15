@@ -1,5 +1,5 @@
 {
-  "name": "express-boilerplate",
+  "name": "Crated",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "dev": "NODE_ENV=development nodemon server/index"
   },
   "keywords": [],
-  "author": "Victor Diaz de Leon",
+  "author": "Crated",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
